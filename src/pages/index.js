@@ -127,13 +127,6 @@ const links = [
 export default function Index() {
   <Helmet>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3F0K3C342"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)}
-      gtag('js', new Date());
-
-      gtag('config', 'G-R3F0K3C342');
-    </script>
   </Helmet>
   return (
     <main style={pageStyles}>
