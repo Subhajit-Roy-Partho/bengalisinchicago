@@ -1,4 +1,5 @@
 import * as React from "react"
+import Helmet from 'react-helmet'
 
 const pageStyles = {
   color: "#232129",
@@ -123,7 +124,17 @@ const links = [
   },
 ]
 
-const IndexPage = () => {
+export default function Index() {
+  <Helmet>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3F0K3C342"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
+
+      gtag('config', 'G-R3F0K3C342');
+    </script>
+  </Helmet>
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
@@ -171,6 +182,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+// export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+// export const Head = () => <title>Home Page</title>
